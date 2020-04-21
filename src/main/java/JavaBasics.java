@@ -9,10 +9,12 @@ public class JavaBasics {
 
     Homepage homepage = new Homepage();
     homepage.open();
+    homepage.close();
 
     System.out.println(homepage.getTitle());
 
     SearchResults searchResults = new SearchResults();
     searchResults.open();
+    searchResults.close();
   }
 }

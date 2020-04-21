@@ -1,17 +1,17 @@
 package com.capgemini.tests.pages;
 
 public abstract class Page {
-  protected String url;
   protected String title;
 
-  public Page(String url, String title) {
-    this.url = url;
+  public Page(String title) {
     this.title = title;
   }
 
   public void open() {
-    System.out.println("Opening page: " + title);
+    System.out.println("Opening page: " + getUrl());
   }
+
+  protected abstract String getUrl();
 
   public String getTitle() {
     return title;
