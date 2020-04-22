@@ -3,6 +3,7 @@
     <test name="My test!">
         <classes>
             <class name="com.capgemini.tests.TestngPlayground"/>
+            <class name="com.capgemini.tests.SeleniumTest"/>
         </classes>
     </test>
 </suite>
