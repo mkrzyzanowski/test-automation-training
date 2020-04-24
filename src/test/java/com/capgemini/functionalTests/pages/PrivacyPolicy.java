@@ -1,11 +1,16 @@
 package com.capgemini.functionalTests.pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class PrivacyPolicy {
+  private static final Logger LOG = LoggerFactory.getLogger(PrivacyPolicy.class);
 
   @FindBy(css = "h1")
   private WebElement heading1;
@@ -17,7 +22,8 @@ public class PrivacyPolicy {
     PageFactory.initElements(driver, this);
   }
 
-  public void open() {
+  public void open()  {
+    LOG.info("Opening page: privacy policy");
     driver.get("https://automationintesting.online/#/privacy");
   }
 
