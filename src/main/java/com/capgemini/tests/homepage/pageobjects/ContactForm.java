@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ContactForm {
+import com.capgemini.tests.BasePageObject;
+
+public class ContactForm extends BasePageObject {
 
   @FindBy(css = ".row.contact")
   private WebElement row;
@@ -31,11 +33,8 @@ public class ContactForm {
   @FindBy(css = "#submitContact")
   private WebElement submitButton;
 
-  private WebDriver driver;
-
   public ContactForm(WebDriver driver) {
-    this.driver = driver;
-    PageFactory.initElements(driver, this);
+    super(driver);
   }
 
   public boolean isDisplayed() {

@@ -2,12 +2,12 @@ package com.capgemini.tests.homepage;
 
 import org.openqa.selenium.WebDriver;
 
-public class Homepage {
+import com.capgemini.tests.BasePageObject;
 
-  private WebDriver driver;
+public class Homepage extends BasePageObject {
 
   public Homepage(WebDriver driver) {
-    this.driver = driver;
+    super(driver);
   }
 
   public Homepage open() {

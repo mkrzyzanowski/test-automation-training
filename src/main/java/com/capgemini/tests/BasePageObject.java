@@ -1,0 +1,14 @@
+package com.capgemini.tests;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public abstract class BasePageObject {
+
+  protected final WebDriver driver;
+
+  public BasePageObject(WebDriver driver) {
+    this.driver = driver;
+    PageFactory.initElements(driver, this);
+  }
+}
