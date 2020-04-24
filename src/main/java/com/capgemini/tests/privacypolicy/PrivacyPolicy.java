@@ -21,9 +21,10 @@ public class PrivacyPolicy extends BasePageObject {
   }
 
   @Step("Opening the Privacy Policy page")
-  public void open() {
+  public PrivacyPolicy open() {
     LOG.info("Opening page: privacy policy");
     driver.get("https://automationintesting.online/#/privacy");
+    return this;
   }
 
   @Step("Extracting heading 1 text")

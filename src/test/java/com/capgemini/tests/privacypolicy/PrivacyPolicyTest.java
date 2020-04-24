@@ -18,9 +18,8 @@ public class PrivacyPolicyTest extends BaseTest {
   public void expectingCorrectHeading1() {
     PrivacyPolicy privacyPolicy = new PrivacyPolicy(driver);
 
-    privacyPolicy.open();
-
-    String actualHeadingText = privacyPolicy.getHeadingText();
+    String actualHeadingText = privacyPolicy.open()
+        .getHeadingText();
 
     assertEquals(actualHeadingText, PRIVACY_POLICY_NOTICE,
         "Heading 1 was not the correct one");
