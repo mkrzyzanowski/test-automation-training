@@ -1,6 +1,4 @@
-package com.capgemini.functionalTests.pages;
-
-import java.io.IOException;
+package com.capgemini.tests.privacypolicy;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

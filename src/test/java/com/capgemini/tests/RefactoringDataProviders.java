@@ -1,4 +1,4 @@
-package com.capgemini.functionalTests;
+package com.capgemini.tests;
 
 import java.util.Arrays;
 import java.util.List;

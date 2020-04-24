@@ -1,4 +1,4 @@
-package com.capgemini.functionalTests.pages;
+package com.capgemini.tests.homepage.pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

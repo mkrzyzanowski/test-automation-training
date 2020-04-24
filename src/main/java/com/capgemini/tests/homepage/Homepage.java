@@ -1,4 +1,4 @@
-package com.capgemini.functionalTests.pages;
+package com.capgemini.tests.homepage;
 
 import org.openqa.selenium.WebDriver;
 
