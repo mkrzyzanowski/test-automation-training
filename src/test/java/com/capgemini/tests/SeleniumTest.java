@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Description;
 
 public class SeleniumTest {
   private WebDriver webDriver;
@@ -50,7 +51,8 @@ public class SeleniumTest {
     webDriver.manage().window().setSize(new Dimension(50, 500));
   }
 
-  @Test
+  @Test(description = "Description from Testng")
+  @Description("POZDRAWIAM!")
   public void interactingWithWebElement() {
     webDriver.get("https://the-internet.herokuapp.com/inputs");
     String expected = "12345";
