@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import io.qameta.allure.Step;
+
 public class PrivacyPolicy {
 
   @FindBy(css = "h1")
@@ -17,10 +19,12 @@ public class PrivacyPolicy {
     PageFactory.initElements(driver, this);
   }
 
+  @Step("Opening Privacy Policy page!")
   public void open() {
     driver.get("https://automationintesting.online/#/privacy");
   }
 
+  @Step("Retrieving heading text")
   public String getHeadingText() {
     return heading1.getText();
   }
